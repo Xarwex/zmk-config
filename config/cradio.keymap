@@ -53,7 +53,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │  [       │  {       │  (       │  ~       │   │  ^       │  )       │  }       │  ]       │  ~       │
-            &kp ESC    &kp LBKT   &kp LBRC   &kp LPAR   &kp TILDE      &kp CARET  &kp RPAR   &kp RBRC   &kp RBKT   &kp GRAVE
+            &kp CAPS  &kp LBKT   &kp LBRC   &kp LPAR   &kp TILDE      &kp CARET  &kp RPAR   &kp RBRC   &kp RBKT   &kp GRAVE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  -       │  *       │  =       │  _       │  $       │   │  #       │          │          │          │          │
             &kp MINUS  &kp ASTRK  &kp EQUAL  &kp UNDER  &kp DLLR       &kp HASH   &kp RCMD   &kp RALT   &kp RCTRL  &kp RSHIFT
