@@ -26,14 +26,25 @@
             tapping-term-ms = <100>;
             bindings = <&kp LCTRL>, <&kp CAPS>;
         };
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N1>, <&kp N2>, <&kp N3>;
+        };
     };
 
     combos {
         compatible = "zmk,combos";
         combo_caps_gaming {
             timeout-ms = <50>;
-            key-positions = <21 31>;
+            key-positions = <20 30>;
             layers = <4>;
+            bindings = <&kp CAPS>;
+        };
+        combo_caps {
+            timeout-ms = <50>;
+            key-positions = <21 22>;
             bindings = <&kp CAPS>;
         };
     };
@@ -119,7 +130,7 @@
 
         gaming_layer {
             bindings = <
-            &kp TAB      &kp Q      &kp W      &kp E      &kp R          &none      &none      &none      &none      &none
+            &kp TAB      &kp Q      &kp W      &kp E      &kp R          &none      &none      &none      &none      &td0
             &kp LSHFT    &kp A      &kp S      &kp D      &kp F          &none      &none      &none      &none      &to 0
             &ht CAPS N1  &ht Z N2   &ht X N3   &ht C N4   &ht V N5       &none      &none      &none      &none      &none
                                                &tdcc      &kp SPACE      &kp CAPS   &kp CAPS
