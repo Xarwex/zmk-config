@@ -21,14 +21,14 @@
             bindings = <&kp>, <&kp>;
         };
     };
-    behaviors {
-        td2: tap_dance_2 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <100>;
-            bindings = <&mo 1>, <&kp CAPS>;
-        };
-    };
+    // behaviors {
+    //     td2: tap_dance_2 {
+    //         compatible = "zmk,behavior-tap-dance";
+    //         #binding-cells = <0>;
+    //         tapping-term-ms = <100>;
+    //         bindings = <&mo 1>, <&kp CAPS>;
+    //     };
+    // };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
@@ -52,7 +52,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ ,        │ .        │ ;        │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp SEMI
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &lt 2 TAB  &kp LSHIFT     &kp SPACE  &td2 
+                                             &lt 2 TAB  &kp LSHIFT     &kp SPACE  &lt 1 CAPS
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -95,10 +95,10 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          |          |
-            &kp 7      &kp 5      &kp 3      &kp 1      &kp 9          &kp 8      &kp 0      &kp 2      &kp 4      &kp 6
+            &kp N7     &kp N5     &kp N3     &kp N1     &kp N9         &kp N8     &kp N0     &kp N2     &kp N4     &kp N6
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //           │          │          │          │          │   │          │          │          |          |
-           &sk LSHIFT &sk LCTRL   &sk LALT   &sk LCMD   &kp F11        &kp F10    &sk RCMD   &sk RALT   &sk RCTRL  &to 4  
+            &sk LSHIFT &sk LCTRL  &sk LALT   &sk LCMD   &kp F11        &kp F10    &sk RCMD   &sk RALT   &sk RCTRL  &to 4  
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │      │   │   │          │          │          │          │
             &kp F7     &kp F5     &kp F3     &kp F1     &kp F9         &kp F8     &kp F12    &kp F2     &kp F4     &kp F6
@@ -112,8 +112,8 @@
         gaming_layer {
             bindings = <
             &kp TAB      &kp Q      &kp W      &kp E      &kp R          &none      &none      &none      &none      &bootloader
-            &kp LSHFT    &kp S      &kp A      &kp D      &kp F          &none      &none      &none      &none      &to 1
-            &ht CAPS 1   &ht Z 2    &ht X 3    &ht C 4    &ht V 5        &none      &none      &none      &none      &none
+            &kp LSHFT    &kp S      &kp A      &kp D      &kp F          &none      &none      &none      &none      &to 0
+            &ht CAPS N1  &ht Z N2   &ht X N3   &ht C N4   &ht V N5        &none      &none      &none      &none      &none
                                                &kp LCTRL  &kp SPACE      &none      &none
             >;
         };
