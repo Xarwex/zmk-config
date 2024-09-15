@@ -111,9 +111,9 @@
 
         gaming_layer {
             bindings = <
-            &kp TAB      &kp Q      &kp W      &kp E      &kp R          &none      &none      &none      &none      &bootloader
+            &kp TAB      &kp Q      &kp W      &kp E      &kp R          &none      &none      &none      &none      &none
             &kp LSHFT    &kp S      &kp A      &kp D      &kp F          &none      &none      &none      &none      &to 0
-            &ht CAPS N1  &ht Z N2   &ht X N3   &ht C N4   &ht V N5        &none      &none      &none      &none      &none
+            &ht CAPS N1  &ht Z N2   &ht X N3   &ht C N4   &ht V N5       &none      &none      &none      &none      &none
                                                &kp LCTRL  &kp SPACE      &none      &none
             >;
         };
