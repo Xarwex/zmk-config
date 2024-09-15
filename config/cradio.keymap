@@ -81,10 +81,10 @@
             &kp TAB    &trans     &trans     &trans     &trans         &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp DEL
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │          │
-            &sk LSHIFT &sk LCTRL  &sk LALT   &sk LCMD   &ESC           &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp BSPC
+            &sk LSHIFT &sk LCTRL  &sk LALT   &sk LCMD   &kp ESC        &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS     │          │          │          │          │   │          │          │          │          │          │
-           &caps_word  &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &kp ENTER
+            &caps_word &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
