@@ -23,7 +23,7 @@
         tdcc: tap_dance_lctrl_caps {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
             bindings = <&kp LCTRL>, <&kp CAPS>;
         };
         td0: tap_dance_0 {
