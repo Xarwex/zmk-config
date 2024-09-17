@@ -30,12 +30,12 @@
 
     combos {
         compatible = "zmk,combos";
-        combo_caps_gaming {
-            timeout-ms = <50>;
-            key-positions = <20 30>;
-            layers = <4>;
-            bindings = <&kp CAPS>;
-        };
+        // combo_caps_gaming {
+        //     timeout-ms = <50>;
+        //     key-positions = <20 30>;
+        //     layers = <6>;
+        //     bindings = <&kp CAPS>;
+        // };
         combo_enter {
             timeout-ms = <50>;
             key-positions = <31 32>;
@@ -97,7 +97,7 @@
             &sk LSHIFT &sk LCTRL  &sk LALT   &sk LCMD   &kp ESC        &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS     │          │          │          │          │   │          │          │          │          │          │
-            &caps_word &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &kp ENTER
+            &caps_word &trans     &trans     &trans     &trans         &to 6      &trans     &trans     &trans     &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -110,8 +110,8 @@
         //│          │          │          │          │          │   │          │          │          │          |          |
             &kp N7     &kp N5     &kp N3     &kp N1     &kp N9         &kp N8     &kp N0     &kp N2     &kp N4     &kp N6
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //           │          │          │          │          │   │          │          │          |          |
-            &sk LSHIFT &sk LCTRL  &sk LALT   &sk LCMD   &kp F11        &kp F10    &sk RCMD   &sk RALT   &sk RCTRL  &to 6  
+        //|          │          │          │          │          │   │          │          │          |          |          |
+            &sk LSHIFT &sk LCTRL  &sk LALT   &sk LCMD   &kp F11        &kp F10    &sk RCMD   &sk RALT   &sk RCTRL  &RSHIFT  
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │      │   │   │          │          │          │          │
             &kp F7     &kp F5     &kp F3     &kp F1     &kp F9         &kp F8     &kp F12    &kp F2     &kp F4     &kp F6
@@ -124,14 +124,14 @@
         right_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
-            &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
+        //│          │          │          │          │          │   │          │          │          │          |          |
+            &trans     &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  A       │  S       │  D       │  F       │  G       │   │  H       │          │          │          │          │
-            &kp A      &kp S      &kp D       &kp F     &kp G          &kp H      &kp RCMD   &kp RALT   &kp RCTRL  &kp RSHIFT
+        //|          │          │          │          │          │   │          │          │          |          |          |
+            &trans     &trans     &trans      &trans    &trans         &trans     &kp RCMD   &kp RALT   &kp RCTRL  &kp RSHIFT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ ,        │ .        │ ;        │
-            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp SEMI
+        //|          │          │          │          │          │   │          │          │          |          |          |
+            &trans     &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -141,14 +141,14 @@
         left_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
-            &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
+        //│          │          │          │          │          │   │          │          │          │          |          |
+            &trans     &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │  G       │   │  H       │  J       │  K       │  L       │ ' "      │
-            &kp LSHIFT &kp LCTRL  &kp LALT   &kp LCMD   &kp G          &kp H      &kp J      &kp K      &kp L      &kp SQT
+        //|          │          │          │          │          │   │          │          │          |          |          |
+            &kp LSHIFT &kp LCTRL  &kp LALT   &kp LCMD   &trans         &trans     &trans     &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ ,        │ .        │ ;        │
-            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp SEMI
+        //|          │          │          │          │          │   │          │          │          |          |          |
+            &trans     &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -160,15 +160,15 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          |          |
-            &kp TAB    &kp Q      &kp W      &kp E      &kp R          &none      &none      &none      &none      &none
+            &ht Z N1   &ht X N2   &ht C N3   &ht V N4   &ht B N5       &none      &none      &none      &none      &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //           │          │          │          │          │   │          │          │          |          |
-            &kp LSHFT  &kp A      &kp S      &kp D      &kp F          &none      &none      &none      &none      &to 0
+            &kp TAB    &kp Q      &kp W      &kp E      &kp R          &none      &none      &none      &none      &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │      │   │   │          │          │          │          │
-            &ht Z N1   &ht X N2   &ht C N3   &ht V N4   &ht B N5       &none      &none      &none      &none      &none
+            &kp LSHFT  &kp A      &kp S      &kp D      &kp F          &none      &none      &none      &none      &to 0
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &tdcc      &kp SPACE      &kp CAPS   &kp CAPS
+                                             &LCTRL     &kp SPACE      &kp CAPS   &kp CAPS
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
