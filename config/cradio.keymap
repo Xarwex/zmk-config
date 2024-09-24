@@ -29,7 +29,7 @@
         combo_tmux {
             timeout-ms = <50>;
             key-positions = <31 32>;
-            bindings = <&kp LCTRL>, <&kp ENTER>;
+            bindings = <&kp LCTRL>, <&kp SPACE>;
         };
     };
 
