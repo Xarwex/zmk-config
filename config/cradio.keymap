@@ -22,13 +22,6 @@
             tapping-term-ms = <200>;
             bindings = <&kp LCTRL>, <&kp CAPS>;
         };
-
-        tap_dance_shift_ctrl: tap_dance_shift_ctrl {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_SHIFT_CTRL";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp LCTRL>;
-        };
     };
 
     combos {
@@ -64,10 +57,10 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W  &kp E  &kp R  &kp T                    &kp Y      &kp U  &kp I      &kp O    &kp P
-&kp A  &kp S  &kp D  &kp F  &kp G                    &kp H      &kp J  &kp K      &kp L    &kp SQT
-&kp Z  &kp X  &kp C  &kp V  &kp B                    &kp N      &kp M  &kp COMMA  &kp DOT  &kp SEMI
-                     &mo 2  &tap_dance_shift_ctrl    &kp SPACE  &mo 1
+&kp Q  &kp W  &kp E  &kp R  &kp T             &kp Y      &kp U  &kp I      &kp O    &kp P
+&kp A  &kp S  &kp D  &kp F  &kp G             &kp H      &kp J  &kp K      &kp L    &kp SQT
+&kp Z  &kp X  &kp C  &kp V  &kp B             &kp N      &kp M  &kp COMMA  &kp DOT  &kp SEMI
+                     &mo 2  &kp LEFT_SHIFT    &kp SPACE  &mo 1
             >;
         };
 
