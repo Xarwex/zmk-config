@@ -41,6 +41,11 @@
             bindings = <&kp LC(SPACE)>;
             key-positions = <31 32>;
         };
+
+        meta_combo {
+            bindings = <&kp LEFT_META>;
+            key-positions = <11 18>;
+        };
     };
 
     conditional_layers {
