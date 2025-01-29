@@ -47,6 +47,11 @@
             bindings = <&kp LEFT_META>;
             key-positions = <11 18>;
         };
+
+        ctrl_combo {
+            bindings = <&kp LCTRL>;
+            key-positions = <21 20>;
+        };
     };
 
     conditional_layers {
