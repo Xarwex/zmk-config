@@ -45,12 +45,14 @@
 
         meta_combo {
             bindings = <&kp LEFT_META>;
-            key-positions = <11 18>;
+            key-positions = <11 10>;
+            layers = <0>;
         };
 
         ctrl_combo {
             bindings = <&kp LCTRL>;
             key-positions = <21 20>;
+            layers = <0>;
         };
     };
 
