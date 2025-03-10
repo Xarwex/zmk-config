@@ -45,7 +45,7 @@
 
         meta_combo {
             bindings = <&kp LEFT_META>;
-            key-positions = <11 10>;
+            key-positions = <22 23>;
             layers = <0>;
         };
 
